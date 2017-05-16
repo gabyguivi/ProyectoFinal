@@ -22,7 +22,6 @@ C:\Users\User\Documents\ProyectoFinal\ProyectoFinal\ApiEjemplo\bin\Microsoft.AI.
 C:\Users\User\Documents\ProyectoFinal\ProyectoFinal\ApiEjemplo\bin\Microsoft.AI.Web.dll
 C:\Users\User\Documents\ProyectoFinal\ProyectoFinal\ApiEjemplo\bin\Microsoft.AI.WindowsServer.dll
 C:\Users\User\Documents\ProyectoFinal\ProyectoFinal\ApiEjemplo\bin\Microsoft.ApplicationInsights.dll
-C:\Users\User\Documents\ProyectoFinal\ProyectoFinal\ApiEjemplo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\User\Documents\ProyectoFinal\ProyectoFinal\ApiEjemplo\bin\MySql.Data.dll
 C:\Users\User\Documents\ProyectoFinal\ProyectoFinal\ApiEjemplo\bin\Newtonsoft.Json.dll
 C:\Users\User\Documents\ProyectoFinal\ProyectoFinal\ApiEjemplo\bin\System.Net.Http.Formatting.dll
@@ -33,7 +32,6 @@ C:\Users\User\Documents\ProyectoFinal\ProyectoFinal\ApiEjemplo\bin\Microsoft.AI.
 C:\Users\User\Documents\ProyectoFinal\ProyectoFinal\ApiEjemplo\bin\Microsoft.AI.Web.xml
 C:\Users\User\Documents\ProyectoFinal\ProyectoFinal\ApiEjemplo\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\User\Documents\ProyectoFinal\ProyectoFinal\ApiEjemplo\bin\Microsoft.ApplicationInsights.xml
-C:\Users\User\Documents\ProyectoFinal\ProyectoFinal\ApiEjemplo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\User\Documents\ProyectoFinal\ProyectoFinal\ApiEjemplo\bin\Newtonsoft.Json.xml
 C:\Users\User\Documents\ProyectoFinal\ProyectoFinal\ApiEjemplo\bin\System.Net.Http.Formatting.xml
 C:\Users\User\Documents\ProyectoFinal\ProyectoFinal\ApiEjemplo\bin\System.Web.Http.xml
