@@ -5,7 +5,7 @@ using System.Configuration;
 using System.Data;
 using System.Linq;
 using System.Web;
-
+using Microsoft.Azure;
 namespace ApiEjemplo.Data
 {
     public class DBHelper
@@ -15,7 +15,7 @@ namespace ApiEjemplo.Data
         {
             get
             {
-                return ConfigurationManager.ConnectionStrings["MySqlConnectionString"].ConnectionString;
+                return CloudConfigurationManager.GetSetting("MySqlConnectionString");                   
             }
         }
         
