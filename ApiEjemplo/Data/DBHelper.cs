@@ -15,12 +15,12 @@ namespace ApiEjemplo.Data
         {
             get
             {
-                return CloudConfigurationManager.GetSetting("MySqlConnectionString");                   
+                return CloudConfigurationManager.GetSetting("MySqlConnectionString");
             }
         }
-        
+
         /// <summary>
-        /// Realiza un insert,update o delete en la base de datos
+        /// Realiza un insert,update o delete en la base de datos. Test LG
         /// </summary>
         public static void EjecutarIUD(string query)
         {
@@ -46,7 +46,7 @@ namespace ApiEjemplo.Data
                 miConn.Open();
                 MySqlCommand miCommand = new MySqlCommand(select, miConn);
                 MySqlDataAdapter da = new MySqlDataAdapter(miCommand);
-                da.Fill(dt);                
+                da.Fill(dt);
                 miConn.Close(); //Nos aseguramos de cerrar la conexion
             }
             return dt;
