@@ -12,13 +12,19 @@ namespace ApiEjemplo.Controllers
 {
     public class PersonaController : ApiController
     {
-        
+
         // GET: api/Persona
         public IList<Persona> Get()
         {
-            return PersonaData.ObtenerTodos();
+            //return PersonaData.ObtenerTodos();
+            List<Persona> l = new List<Persona>();
+            Persona p = new Persona();
+            p.Nombre = ApiEjemplo.Data.DBHelper.ConnectionString;
+            p.Id = 1;
+            l.add(p);
+            return l;
         }
-        
+
         // GET: api/Persona/5
         [ResponseType(typeof(Persona))]
         public IHttpActionResult Get(int id)
@@ -35,7 +41,7 @@ namespace ApiEjemplo.Controllers
         [ResponseType(typeof(Persona))]
         public IHttpActionResult Post(Persona persona)
         {
-            if (persona==null || string.IsNullOrEmpty(persona.Nombre))//validamos nombre 
+            if (persona==null || string.IsNullOrEmpty(persona.Nombre))//validamos nombre
             {
                 return BadRequest("Debe ingresar un nombre.");
             }
