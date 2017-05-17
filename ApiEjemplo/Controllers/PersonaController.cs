@@ -17,14 +17,6 @@ namespace ApiEjemplo.Controllers
         public IList<Persona> Get()
         {
             return PersonaData.ObtenerTodos();
-            /*
-            List<Persona> l = new List<Persona>();
-            Persona p = new Persona();
-            p.Nombre = ApiEjemplo.Data.DBHelper.ConnectionString;
-            p.Id = 1;
-            l.Add(p);
-            return l;
-            */
         }
 
         // GET: api/Persona/5

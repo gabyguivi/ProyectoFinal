@@ -20,7 +20,7 @@ namespace ApiEjemplo.Data
         }
 
         /// <summary>
-        /// Realiza un insert,update o delete en la base de datos. Test LG
+        /// Realiza un insert,update o delete en la base de datos. 
         /// </summary>
         public static void EjecutarIUD(string query)
         {
