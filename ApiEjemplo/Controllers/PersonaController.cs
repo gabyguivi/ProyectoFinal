@@ -21,7 +21,7 @@ namespace ApiEjemplo.Controllers
             Persona p = new Persona();
             p.Nombre = ApiEjemplo.Data.DBHelper.ConnectionString;
             p.Id = 1;
-            l.add(p);
+            l.Add(p);
             return l;
         }
 
