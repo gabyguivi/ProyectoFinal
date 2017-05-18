@@ -37,7 +37,7 @@ namespace ApiEjemplo.Controllers
         {
             if (persona==null || string.IsNullOrEmpty(persona.Nombre))//validamos nombre
             {
-                return BadRequest("Debe ingresar un nombre.");
+                return BadRequest("Datos incorrectos.");
             }
             PersonaData.Insert(persona);
             return Ok();
