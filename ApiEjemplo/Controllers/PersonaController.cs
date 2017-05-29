@@ -44,6 +44,21 @@ namespace ApiEjemplo.Controllers
             return Ok(lista);
         }
 
+        /*
+        // EJEMPLO DE COMO CONFIGURAR EL ROUTE PARA UN ACTION PARTICULAR
+        [ResponseType(typeof(IList<Persona>))]
+        [Route("api/persona/getbyfecha/{fecha}")]
+        public IHttpActionResult GetByFecha(string fecha)
+        {
+            List<Persona> lista = new List<Persona>();
+            lista = PersonaData.ObtenerPorNombre(fecha);
+            if (lista.Count == 0)
+            {
+                return NotFound();
+            }
+            return Ok(lista);
+        }*/
+
         // POST: api/Persona
         [ResponseType(typeof(Persona))]
         public IHttpActionResult Post(Persona persona)
