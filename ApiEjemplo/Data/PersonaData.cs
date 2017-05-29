@@ -1,4 +1,4 @@
-﻿using ApiEjemplo.Models;
+using ApiEjemplo.Models;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -54,6 +54,24 @@ namespace ApiEjemplo.Data
                     lista.Add(p);
                 }
                 p = ObtenerPorRow(dt.Rows[0]);                
+            }
+            return lista;
+        }
+
+        public static List<Persona> ObtenerPorNombre(string nombre)
+        {
+            string select = "select * from personas where Nombre like '%"+nombre+"%'";
+            DataTable dt = DBHelper.EjecutarSelect(select);
+            List<Persona> lista = new List<Persona>();
+            Persona p;
+            if (dt.Rows.Count > 0)
+            {
+                foreach (DataRow row in dt.Rows)
+                {
+                    p = ObtenerPorRow(row);
+                    lista.Add(p);
+                }
+                p = ObtenerPorRow(dt.Rows[0]);
             }
             return lista;
         }
