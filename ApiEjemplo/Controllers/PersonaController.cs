@@ -1,4 +1,4 @@
-﻿using ApiEjemplo.Data;
+using ApiEjemplo.Data;
 using ApiEjemplo.Models;
 using System;
 using System.Collections.Generic;
@@ -29,6 +29,19 @@ namespace ApiEjemplo.Controllers
                 return NotFound();
             }
             return Ok(persona);
+        }
+
+        // GET: api/Persona/gaby
+        [ResponseType(typeof(IList<Persona>))]
+        public IHttpActionResult Get(string nombre)
+        {
+            List<Persona> lista = new List<Persona>();
+            lista = PersonaData.ObtenerPorNombre(nombre);
+            if (lista.Count==0)
+            {
+                return NotFound();
+            }
+            return Ok(lista);
         }
 
         // POST: api/Persona
