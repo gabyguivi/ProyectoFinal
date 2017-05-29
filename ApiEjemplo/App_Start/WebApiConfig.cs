@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http.Headers;
@@ -20,6 +20,12 @@ namespace ApiEjemplo
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+            config.Routes.MapHttpRoute(
+                name:"GetByNombre", // Route name
+                routeTemplate: "api/{controller}/{action}/{nombre}",// URL with parameters
+                defaults: new { nombre = "" }  // Parameter defaults
+        );
 
             config.Formatters.JsonFormatter.SupportedMediaTypes
                 .Add(new MediaTypeHeaderValue("text/html"));
